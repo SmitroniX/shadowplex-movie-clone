@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowPlex - Premium Movies & Web Series</title>
+    <meta name="description" content="Download 4K Ultra HD Movies, Web Series, and TV Shows. High-quality content with multiple download options.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>ShadowPlex</h1>
+                <span class="tagline">Premium Content</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link active">Home</a></li>
+                    <li><a href="/movies" class="nav-link">Movies</a></li>
+                    <li><a href="/web-series" class="nav-link">Web Series</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="/movies?genre=action">Action</a>
+                            <a href="/movies?genre=drama">Drama</a>
+                            <a href="/movies?genre=comedy">Comedy</a>
+                            <a href="/movies?genre=thriller">Thriller</a>
+                            <a href="/movies?genre=horror">Horror</a>
+                            <a href="/movies?genre=sci-fi">Sci-Fi</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search movies & series..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Movies & Web Series</h1>
+            <p class="hero-subtitle">Download 4K Ultra HD content with multiple quality options</p>
+            <div class="hero-buttons">
+                <a href="/movies" class="btn btn-primary">Browse Movies</a>
+                <a href="/web-series" class="btn btn-secondary">Explore Series</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Featured Content -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Content</h2>
+            <div class="featured-grid" id="featuredGrid">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading featured content...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Movies -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Movies</h2>
+                <a href="/movies" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="content-grid" id="moviesGrid">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading movies...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Web Series -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Web Series</h2>
+                <a href="/web-series" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="content-grid" id="seriesGrid">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading web series...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid">
+                <a href="/movies?genre=action" class="category-card">
+                    <i class="fas fa-fist-raised"></i>
+                    <h3>Action</h3>
+                    <p>High-octane adventures</p>
+                </a>
+                <a href="/movies?genre=drama" class="category-card">
+                    <i class="fas fa-theater-masks"></i>
+                    <h3>Drama</h3>
+                    <p>Emotional storytelling</p>
+                </a>
+                <a href="/movies?genre=comedy" class="category-card">
+                    <i class="fas fa-laugh"></i>
+                    <h3>Comedy</h3>
+                    <p>Non-stop laughter</p>
+                </a>
+                <a href="/movies?genre=thriller" class="category-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Thriller</h3>
+                    <p>Edge-of-seat suspense</p>
+                </a>
+                <a href="/movies?genre=horror" class="category-card">
+                    <i class="fas fa-ghost"></i>
+                    <h3>Horror</h3>
+                    <p>Chilling experiences</p>
+                </a>
+                <a href="/movies?genre=sci-fi" class="category-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Sci-Fi</h3>
+                    <p>Future adventures</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShadowPlex</h3>
+                    <p>Your ultimate destination for premium movies and web series in 4K Ultra HD quality.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/movies">Movies</a></li>
+                        <li><a href="/web-series">Web Series</a></li>
+                        <li><a href="/admin">Admin Panel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="/movies?genre=action">Action</a></li>
+                        <li><a href="/movies?genre=drama">Drama</a></li>
+                        <li><a href="/movies?genre=comedy">Comedy</a></li>
+                        <li><a href="/movies?genre=thriller">Thriller</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quality</h4>
+                    <ul>
+                        <li>4K Ultra HD</li>
+                        <li>1080p Full HD</li>
+                        <li>720p HD</li>
+                        <li>480p SD</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShadowPlex. All rights reserved. | Admin: jogdandasmit@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
