@@ -51,8 +51,8 @@ npm start
 - **Admin Login**: http://localhost:8000/admin/login
 
 ## Admin Credentials
-- **Email**: jogdandasmit@gmail.com
-- **Password**: #Aax49634
+- **Email**: 1234@gmail.com
+- **Password**: 12345678
 
 ## API Endpoints
 
@@ -144,7 +144,7 @@ The SQLite database includes:
    - Verify all dependencies are installed: `npm install`
 
 2. **Admin login fails**
-   - Ensure credentials match exactly: jogdandasmit@gmail.com / #Aax49634
+   - Ensure credentials match exactly: 123456@gmail.com / 12345678
    - Check server logs for errors
 
 3. **No movies showing**
